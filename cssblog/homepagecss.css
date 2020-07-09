@@ -1,0 +1,72 @@
+@import url("footerhomepage.css"); @import url("bodyhomepage.css"); @import url("headerhomepage.css"); @import url("homepagebutton.css"); 
+
+ {
+   box-sizing: border-box;
+ }
+    
+      .wrap{
+          width:1000px;
+          margin:auto;
+          margin-top:100px;
+      }
+      .card{
+          display: flex;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+          transition: 0.4s;
+          width:300px;
+          background:#fff;
+          text-align:left;
+          font-size:16px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          float:left;
+          margin:10px;
+      }
+      .card:hover{
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+      }
+ *{
+   
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+ } 
+ .grid{
+    display:grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.grid > div{
+    background: palevioletred;
+    padding: 1em;
+}
+.grid > div:nth-child(odd){
+    background-color: blueviolet;
+}
+
+ .wrapper{
+     width: 90%;
+     margin: 0 auto;
+ }
+
+ li{
+   border: 1px black;
+   margin:0.5em;
+   padding:0.5em;  
+ }
+
+ ul{
+     list-style-type:none;
+     margin:0;
+     padding:0;
+     border: 2px skyblue;
+     display:flex;
+     justify-content:center;
+ }
+
+ @media(min-width: 800px) {
+    body{
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 600px;
+        grid-template-areas: 195px ;
+        font-size: 20px; 
+    } 
