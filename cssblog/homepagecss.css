@@ -63,16 +63,8 @@ padding: 0;
      justify-content:center;
  }
 
- @media(min-width: 800px) {
-          /*Computer*/
-    body{
-        grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 300px 600px;
-        grid-template-areas: 195px ;
-        font-size: 20px; 
-    } 
-    @media only screen and (max-width: 600px) {
-        /*mobile phones*/ 
+  @media (max-width:768px) {
+        .header {
             width: 100%;
         }
-  
+    }
